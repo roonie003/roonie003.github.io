@@ -8,6 +8,318 @@
   <meta name="keywords" content="cafe, boutique, Durban,unique, indoor, outdoor, eat, food, restaurant">
   <script src="https://kit.fontawesome.com/a2f9677525.js" crossorigin="anonymous"></script>
   <title>Freedom Cafe | Contact Us </title>  
+  <style>
+    /*Reset*/
+* {
+ margin: 0;
+ padding: 0;
+ box-sizing: border-box;
+}
+
+/*Utilities*/
+.container {
+  margin: auto;
+  max-width: 1100px;
+  overflow: auto;
+  padding: 10px;
+  opacity: 0.9;
+}
+
+.text-primary{
+  color: olivedrab;
+}
+
+.lead {
+  font-size: 20px;
+}
+
+.btn {
+  display: inline-block;
+  font-size: 18px;
+  color: #ffffff;
+  background: olivedrab;
+  padding: 13px 20px;
+  border: none;
+  cursor: pointer;
+}
+.btn-light {
+  background: olivedrab;
+  color: #ffffff;
+}
+.btn:hover {
+  background:#333333;
+  color: #ffffff;
+}
+
+.bg-dark {
+  background: #333333;
+  color: #ffffff;
+}
+.bg-primary {
+  background: olivedrab;
+  color: white;
+}
+
+.bg-light {
+  background:#e9e8e8;
+  color: #333333;
+}
+
+.clr {
+  clear: both;
+}
+
+.l-heading{
+  font-size: 40px;
+}
+
+/*Main Styling*/
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  line-height: 1.7em; 
+}
+
+a {
+  text-decoration: none;
+  color: #333333;
+}
+
+h1, h2, h3 {
+  padding-bottom: 20px;
+}
+
+p {
+  margin: 10px 0;
+}
+
+.logo {
+  background: url(../img/2logo.png) no-repeat  no-repeat top left;
+  display: block;
+  float: left;
+  height: 90px;
+  overflow: hidden;
+  padding: 0;
+  text-indent: -9999px;
+  width: 350px;
+}
+
+/*Padding*/
+.py-1 {padding: 10px 0;}
+.py-2 {padding: 20px 0;}
+.py-3 {padding: 30px 0;}
+
+/*Navbar*/
+#navbar {
+  background: #ffffff;
+  color: olivedrab;
+  overflow: auto;
+}
+
+#navbar a {
+  color: olivedrab;
+  font-weight: bold;
+}
+
+#navbar h1 {
+  float: left;
+  padding-top: 20px ;
+}
+
+#navbar ul {
+  list-style: none;
+  float: right;
+}
+
+#navbar ul li {
+  float: left;
+}
+
+#navbar ul li a {
+  display: block;
+  padding: 20px;
+  text-align: center;
+}
+
+#navbar ul li a:hover {
+  background:olivedrab;
+  color: #333333;
+}
+
+/*showcase*/
+
+#showcase {
+  background:no-repeat url('https://scontent.fcpt1-1.fna.fbcdn.net/v/t31.0-8/12794866_1126173957448067_5909090236034509938_o.jpg?_nc_cat=105&_nc_ohc=9XYF8i3VM9cAQmeSaydbdeEATICnu3FiZN6K3yJS873aV7ToZv94tSArA&_nc_ht=scontent.fcpt1-1.fna&oh=20c15ea3ed660d1918700a245e1bbb64&oe=5E6AE220') center center/cover;
+  height: 600px;
+}
+  
+#showcase {
+  color: #ffffff;
+  text-align: center;
+  padding-top: 350px;
+}
+
+#showcase .showcase-content h1 {
+  font-size: 60px;
+  line-height: 1.2em;
+  margin-bottom: 40px;
+  padding: 20px;
+}
+
+#showcase .showcase-content p{
+  padding-bottom: 20px;
+  line-height: 1.7em;
+}
+
+/*Home info*/
+#home-info {
+  height: 400px;
+}
+#home-info .info-img {
+  float: left;
+  width: 50%;
+  background: url(../img/lastcake.png) no-repeat;
+  min-height: 100%;
+}
+
+#home-info .info-content {
+  float: right;
+  width: 50%;
+  text-align: center;
+  height: 100%;
+  padding: 50px 30px;
+  overflow: hidden;
+}
+
+#home-info .info-content p{
+  padding-bottom: 30px;
+}
+
+#hname {
+  color: #ffffff;
+}
+
+#menulink {
+  color: olivedrab;
+}
+
+/*Features*/
+
+.box {
+  float: left;
+  width: 33.3%;
+  padding: 50px;
+  text-align: center;
+}
+
+.box i{
+  margin-bottom: 10px;
+}
+
+.fa-utensils{
+  color: olivedrab;
+}
+
+.fa-hotel {
+  color: olivedrab;
+}
+
+
+/*About*/
+#about-info .info-right{
+  float: right;
+  width: 50%;
+  min-height: 100%;
+}
+
+#about-info .info-right img {
+  width: 70%;
+  display: block;
+  margin: auto;
+  border-radius: 50%;
+}
+
+
+#about-info .info-left {
+  float: left;
+  width: 50%;
+  min-height: 100%;
+}
+
+/*Testimonials*/
+#testimonials {
+  height: 600px;
+  background:url('../img/testimonial.jpg') no-repeat 
+  center center/cover;
+  padding-top: 100px;
+}
+#testimonials .testimonial{
+  margin-bottom: 20px;
+  padding: 20px;
+  border-radius: 5px;
+  
+}
+
+#testimonials h2 {
+  color: #ffffff;
+  text-align: center;
+  padding-bottom: 40px;
+}
+
+#testimonials .testimonial img {
+  width:75px ;
+  float: left;
+  margin-right: 20px;
+  border-radius: 50%;
+}
+/*Contact Form*/
+#contact-form .form-group {
+  margin-bottom: 20px;
+}
+
+#contact-form label {
+  display: block;
+  margin-bottom: 5px;
+}
+
+#contact-form input,
+#contact-form textarea {
+  width: 100%;
+  padding: 10px;
+  border: 1px olivedrab solid;
+}
+
+#contact-form textarea{
+  height: 200px;
+}
+
+#contact-form input:focus,
+#contact-form textarea:focus{
+  outline: none;
+  border-color: olivedrab;
+}
+
+  .fa-clock{
+    color: olivedrab;   
+}
+
+
+/*Social Media*/
+
+#lab_social_icon_footer a {
+  color: olivedrab;
+  }
+
+
+/* Main Footer*/
+#main-footer {
+  text-align: center;
+  background:#333333;
+  color: white;
+  padding: 20px;
+}
+
+  </style>
 </head>
 <body>
   <header>
